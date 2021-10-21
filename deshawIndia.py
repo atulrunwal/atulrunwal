@@ -1,7 +1,8 @@
 # deshawIndia.py
+import csv
 import requests
 from bs4 import BeautifulSoup
-import csv
+
 
 f = open('jobs_data1.csv', 'a')
 write_file = csv.writer(f)
