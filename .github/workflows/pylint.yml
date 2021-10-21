@@ -16,8 +16,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        python -m pip install requests
+        python -m pip install beautifulsoup4
         pip install pylint
+        
+        
     - name: Analysing the code with pylint
       run: |
         pylint `ls -R|grep .py$|xargs`
-        exprot PYTHONPATH=src
